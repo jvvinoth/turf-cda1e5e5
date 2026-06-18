@@ -191,51 +191,50 @@ export const siteContent = {
     ],
     actionImages: [
       'https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=600&q=80',
+      'https://images.unsplash.com/photo-1489944440615-453fc2b6a9a9?auto=format&fit=crop&w=600&q=80',
       'https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1529900748604-07564a03e7a6?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?auto=format&fit=crop&w=600&q=80',
     ],
-    ctaFinal: 'JOIN THE COMMUNITY - BOOK NOW',
-  },
-
-  whatsappFloat: {
-    number: '+919876543210',
-    message: 'Hi! I want to book a turf slot. Can you help?',
-    label: 'Chat with us on WhatsApp',
   },
 
   footer: {
-    tagline: 'YOUR GAME. YOUR TIME.',
-    description: 'Chennai's premier sports turf facility. Book instantly, play today.',
+    tagline: 'Premium Sports Turf in Chennai',
+    description: 'Book cricket nets, football turf, and full-pitch facilities. Floodlit evening slots available. Instant WhatsApp confirmation.',
     social: [
       {
         platform: 'Instagram',
         icon: 'Instagram',
-        url: 'https://instagram.com/turfchennai',
+        url: 'https://instagram.com',
       },
       {
         platform: 'Facebook',
         icon: 'Facebook',
-        url: 'https://facebook.com/turfchennai',
+        url: 'https://facebook.com',
       },
       {
         platform: 'WhatsApp',
         icon: 'MessageCircle',
-        url: 'https://wa.me/919876543210',
+        url: 'https://wa.me/917550291233',
       },
     ],
     quickLinks: [
-      { label: 'Home', href: '#home' },
       { label: 'Book Now', href: '#book' },
       { label: 'Facilities', href: '#facilities' },
       { label: 'Pricing', href: '#pricing' },
       { label: 'Location', href: '#location' },
     ],
     contact: {
-      whatsapp: '+91 98765 43210',
-      email: 'hello@turfchennai.com',
+      whatsapp: '+91 7550291233',
+      email: 'turfChennai@gmail.com',
       hours: 'Daily 6:00 AM - 10:00 PM',
     },
     copyright: '© 2024 Turf சென்னை. All rights reserved.',
   },
-};
+
+  whatsappFloat: {
+    number: '+917550291233',
+    message: 'Hi! I want to book a slot at Turf சென்னை.',
+    label: 'WhatsApp us',
+  },
+} as const;
+
+export type SiteContent = typeof siteContent;

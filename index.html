@@ -13,6 +13,27 @@
     <meta name="twitter:title" content="Turf சென்னை - Premium Sports Turf Booking in Chennai" />
     <meta name="twitter:description" content="Book premium cricket nets, 5-a-side football, and full-pitch turf in Chennai. Floodlit evening slots, instant WhatsApp confirmation." />
     <title>Turf சென்னை - Premium Sports Turf Booking in Chennai</title>
+    <style>
+      /* Prevent FOUC and ensure background is visible immediately */
+      html, body, #root {
+        background-color: #0A0A0A;
+        color: #F5F5F5;
+        margin: 0;
+        padding: 0;
+      }
+      
+      /* Loading state */
+      #root:empty::before {
+        content: "Loading...";
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #0FFF50;
+        font-family: 'Inter', sans-serif;
+        font-size: 18px;
+      }
+    </style>
   </head>
   <body>
     <div id="root"></div>
