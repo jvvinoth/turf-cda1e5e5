@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&family=Noto+Sans+Tamil:wght@600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Color Palette */
+  --color-primary: #0FFF50;
+  --color-secondary: #FF3D00;
+  --color-accent: #00E5FF;
+  --color-background: #0A0A0A;
+  --color-surface: #1A1A1A;
+  --color-border: #2A2A2A;
+  --color-text: #F5F5F5;
+  --color-text-muted: #888888;
+  --color-success: #0FFF50;
+  --color-warning: #FFB800;
+
+  /* Typography */
+  --font-heading: 'Bebas Neue', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-tamil: 'Noto Sans Tamil', sans-serif;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-text font-body antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
+
+@layer components {
+  /* Text Gradient Effect */
+  .text-gradient {
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Glow Shadow Effect */
+  .shadow-glow {
+    box-shadow: 0 0 30px rgba(15, 255, 80, 0.4);
+  }
+
+  /* Radial Gradient Background */
+  .bg-gradient-radial {
+    background: radial-gradient(circle at center, var(--color-primary) 0%, transparent 70%);
+  }
+
+  /* Hero Image Diagonal Clip */
+  .hero-image-clip {
+    clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  @media (max-width: 768px) {
+    .hero-image-clip {
+      clip-path: none;
+    }
+  }
+
+  /* Custom Scrollbar */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    @apply bg-background rounded-full;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    @apply bg-border rounded-full;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    @apply bg-primary;
+  }
+}
+
+@layer utilities {
+  /* Reveal Animation */
+  [data-reveal] {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+
+  [data-reveal].reveal-active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Prose Max Width */
+  .max-w-prose {
+    max-width: 65ch;
+  }
+}
+
+/* WhatsApp Pulse Animation */
+@keyframes ping {
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.animate-ping {
+  animation: ping 1.5s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
