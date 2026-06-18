@@ -192,75 +192,49 @@ export const siteContent = {
     actionImages: [
       'https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=600&q=80',
       'https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=600&q=80',
-      'https://images.unsplash.com/photo-1589487391730-58f20eb2c308?auto=format&fit=crop&w=600&q=80',
+      'https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?auto=format&fit=crop&w=600&q=80',
+      'https://images.unsplash.com/photo-1624526267942-ab0ff8a3e972?auto=format&fit=crop&w=600&q=80',
     ],
-    stats: [
-      { value: '50+', label: 'Weekly Bookings' },
-      { value: '4.9★', label: 'Google Rating' },
-      { value: '200+', label: 'Happy Players' },
-    ],
-  },
-
-  contact: {
-    overline: 'QUESTIONS? BOOK NOW.',
-    headline: 'Call, WhatsApp, or Book Online.',
-    subtext: "We're here 6 AM to 10 PM, every day. Get instant responses on WhatsApp or call us directly.",
-    methods: [
-      {
-        icon: 'Phone',
-        title: 'Call Us',
-        value: '7550291233',
-        link: 'tel:7550291233',
-        description: 'Available 6 AM - 10 PM',
-      },
-      {
-        icon: 'MessageCircle',
-        title: 'WhatsApp',
-        value: '7550291233',
-        link: 'https://wa.me/917550291233',
-        description: 'Instant booking confirmation',
-      },
-      {
-        icon: 'Mail',
-        title: 'Email',
-        value: 'turfChennai@gmail.com',
-        link: 'mailto:turfChennai@gmail.com',
-        description: 'For group bookings & packages',
-      },
-    ],
-    hours: {
-      title: 'Operating Hours',
-      schedule: [
-        { day: 'Monday - Sunday', time: '6:00 AM - 10:00 PM' },
-      ],
-      note: 'Open all 365 days. Last booking at 9 PM.',
-    },
+    ctaFinal: 'JOIN THE COMMUNITY - BOOK NOW',
   },
 
   footer: {
-    tagline: "Chennai's Premier Sports Turf",
-    description: 'Professional-grade facilities for cricket and football. Book instantly, play today.',
+    tagline: 'Chennai\'s Premium Sports Turf',
+    description: 'Professional-grade facilities for cricket and football. Book your slot today and experience the difference.',
     social: [
-      { platform: 'Instagram', url: 'https://instagram.com/turfchennai', icon: 'Instagram' },
-      { platform: 'Facebook', url: 'https://facebook.com/turfchennai', icon: 'Facebook' },
-      { platform: 'WhatsApp', url: 'https://wa.me/917550291233', icon: 'MessageCircle' },
+      {
+        platform: 'Instagram',
+        icon: 'Instagram',
+        url: 'https://instagram.com/turfchennai',
+      },
+      {
+        platform: 'Facebook',
+        icon: 'Facebook',
+        url: 'https://facebook.com/turfchennai',
+      },
+      {
+        platform: 'WhatsApp',
+        icon: 'MessageCircle',
+        url: 'https://wa.me/919876543210',
+      },
     ],
-    links: {
-      quickLinks: [
-        { label: 'Book Now', href: '#booking' },
-        { label: 'Pricing', href: '#pricing' },
-        { label: 'Facilities', href: '#facilities' },
-        { label: 'Location', href: '#location' },
-      ],
-      contact: [
-        { label: '7550291233', href: 'tel:7550291233' },
-        { label: 'turfChennai@gmail.com', href: 'mailto:turfChennai@gmail.com' },
-        { label: 'OMR Road, Thoraipakkam', href: '#location' },
-      ],
+    quickLinks: [
+      { label: 'Book Now', href: '#book' },
+      { label: 'Facilities', href: '#facilities' },
+      { label: 'Pricing', href: '#pricing' },
+      { label: 'Location', href: '#location' },
+    ],
+    contact: {
+      whatsapp: '+91 98765 43210',
+      email: 'info@turfchennai.com',
+      hours: 'Open Daily: 6 AM - 10 PM',
     },
-    legal: {
-      copyright: '© 2024 Turf சென்னை. All rights reserved.',
-      builtWith: 'Built with ❤️ in Chennai',
-    },
+    copyright: '© 2024 Turf சென்னை. All rights reserved.',
+  },
+
+  whatsappFloat: {
+    number: '+919876543210',
+    message: 'Hi! I want to book a turf slot.',
+    label: 'Chat on WhatsApp',
   },
 };
